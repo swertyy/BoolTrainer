@@ -52,6 +52,9 @@ BoolTrainer — графический учебный тренажёр для и
 ## Установка зависимостей
 pip install matplotlib pandas
 
+## или 
+## pip install -r requirements.txt
+
 ## Запуск
 python main.py
 ```
