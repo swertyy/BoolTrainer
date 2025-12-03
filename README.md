@@ -91,17 +91,17 @@ pytest test.py -v
 BoolTrainer/
 ├── main.py                 ## Точка входа
 ├── core/                   ## Логическое ядро
-│&nbsp;├── calculator.py       ## Вычисление выражений
-│&nbsp;── parser.py           ## Извлечение переменных
-│&nbsp;└── validator.py        ## Валидация синтаксиса
+│    ├── calculator.py       ## Вычисление выражений
+│    ── parser.py           ## Извлечение переменных
+│    └── validator.py        ## Валидация синтаксиса
 ├── ui/                     ## Графический интерфейс
-│&nbsp;└── ui.py
+│    └── ui.py
 ├── theory_cards/           ## JSON-модули: теория + задания
 ├── test.py                 ## Тесты (pytest)
 ├── screenshots/            ## Скриншоты приложения
-│&nbsp;├── startmenu.png       ## Стартовое меню
-│&nbsp;├── constructor.png     ## Конструктор
-│&nbsp;└── learning.png        ## Интерактивное обучение
+│    ├── startmenu.png       ## Стартовое меню
+│    ├── constructor.png     ## Конструктор
+│    └── learning.png        ## Интерактивное обучение
 └── requirements.txt        ## Зависимости
 ```
 #### Скриншоты
