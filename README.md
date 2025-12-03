@@ -88,19 +88,33 @@ pytest test.py -v
 # Структура проекта
 
 BoolTrainer/
+
 ├── main.py                 # Точка входа
+
 ├── core/                   # Логическое ядро
+
 │   ├── calculator.py       # Вычисление выражений
+
 │   ├── parser.py           # Извлечение переменных
+
 │   └── validator.py        # Валидация синтаксиса
+
 ├── ui/                     # Графический интерфейс
+
 │   └── ui.py
+
 ├── theory_cards/           # JSON-модули: теория + задания
+
 ├── test.py                 # Тесты (pytest)
+
 ├── screenshots/            # Скриншоты приложения
+
 │   ├── startmenu.png       # Стартовое меню
-│   ├── constructor.png           # Конструктор
+
+│   ├── constructor.png     # Конструктор
+
 │   └── learning.png        # Интерактивное обучение
+
 └── requirements.txt        # Зависимости
 
 # Скриншоты
