@@ -28,29 +28,17 @@ BoolTrainer — графический учебный тренажёр для и
 
 # Используемые технологии
 
-## Язык программирования
+## Язык программирования – Python
 
-Python
+## Графический интерфейс – Tkinter (ttk)
 
-## Графический интерфейс
+## Экспорт изображений – Matplotlib + Pandas
 
-Tkinter (ttk)
+## Хранение контента – JSON-файлы
 
-## Экспорт изображений
+## Сборка в .exe – PyInstaller
 
-Matplotlib + Pandas
-
-## Хранение контента
-
-JSON-файлы
-
-## Сборка в .exe
-
-PyInstaller
-
-## Тестирование
-
-pytest
+## Тестирование – pytest
 
 # Как запустить
 ## Вариант 1: Из исходного кода
@@ -92,12 +80,12 @@ pytest test.py -v
 
 Рисунок 1 — Главное меню
 
-![Alt text](screenshots\startmenu.png)
+![Alt text](screenshots/startmenu.png)
 
 Рисунок 2 — Режим «Конструктор функций»
 
-![Alt text](screenshots\constructor.png)
+![Alt text](screenshots/constructor.png)
 
 Рисунок 3 — Режим «Интерактивное обучение»
 
-![Alt text](screenshots\learning.png)
+![Alt text](screenshots/learning.png)
