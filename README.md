@@ -93,15 +93,15 @@ BoolTrainer/
 
 ├── core/                   # Логическое ядро
 
-│           ├── calculator.py       # Вычисление выражений
+│&nbsp;├── calculator.py       # Вычисление выражений
 
-│           ── parser.py           # Извлечение переменных
+│&nbsp;── parser.py           # Извлечение переменных
 
-│           └── validator.py        # Валидация синтаксиса
+│&nbsp;└── validator.py        # Валидация синтаксиса
 
 ├── ui/                     # Графический интерфейс
 
-│   └── ui.py
+│&nbsp;└── ui.py
 
 ├── theory_cards/           # JSON-модули: теория + задания
 
@@ -109,11 +109,11 @@ BoolTrainer/
 
 ├── screenshots/            # Скриншоты приложения
 
-│           ├── startmenu.png       # Стартовое меню
+│&nbsp;├── startmenu.png       # Стартовое меню
 
-│           ├── constructor.png     # Конструктор
+│&nbsp;├── constructor.png     # Конструктор
 
-│           └── learning.png        # Интерактивное обучение
+│&nbsp;└── learning.png        # Интерактивное обучение
 
 └── requirements.txt        # Зависимости
 
