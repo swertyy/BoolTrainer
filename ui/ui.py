@@ -320,18 +320,30 @@ class InteractiveLearning:
             return
         name = item['text']
         path = os.path.join(resource_path("theory_cards"), f"{name}.json")
-        print(path)
 
         if not os.path.isfile(path):
-            self.show_message("Файл теории не найден.")
+            ErrorDialog(self.win, "Файл теории не найден.")
             return
+
         try:
             with open(path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
+
+            # Проверка структуры
+            if not isinstance(data, dict):
+                raise ValueError("Файл должен содержать объект (словарь)")
+            # Проверяем только title, допускается, что остальные поля могут быть пустыми
+            if 'title' not in data:
+                raise ValueError("Обязательное поле 'title' отсутствует")
+
+        except json.JSONDecodeError as e:
+            ErrorDialog(self.win, f"Некорректный JSON: {str(e)[:100]}")
+        except ValueError as e:
+            ErrorDialog(self.win, f"Ошибка структуры: {e}")
         except Exception as e:
-            self.show_message(f"Ошибка: {e}")
-            return
-        self.show_content(data)
+            ErrorDialog(self.win, f"Не удалось загрузить файл: {e}")
+        else:
+            self.show_content(data)
 
     # отрисовывает теория и задания из файла JSON
     def show_content(self, data):
