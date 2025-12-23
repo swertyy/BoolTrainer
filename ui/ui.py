@@ -332,9 +332,14 @@ class InteractiveLearning:
             # Проверка структуры
             if not isinstance(data, dict):
                 raise ValueError("Файл должен содержать объект (словарь)")
-            # Проверяем только title, допускается, что остальные поля могут быть пустыми
             if 'title' not in data:
-                raise ValueError("Обязательное поле 'title' отсутствует")
+                raise ValueError("Поле 'title' отсутствует")
+            if 'text' not in data:
+                raise ValueError("Поле 'text' отсутствует")
+            if 'task' not in data:
+                raise ValueError("Поле 'task' отсутствует")
+            if 'answer' not in data:
+                raise ValueError("Поле 'answer' отсутствует")
 
         except json.JSONDecodeError as e:
             ErrorDialog(self.win, f"Некорректный JSON: {str(e)[:100]}")
